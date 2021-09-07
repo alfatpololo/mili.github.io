@@ -24,23 +24,35 @@
 
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+    <i class="fas fa-bars"></i>
   </button>
 
   <!-- Navbar links -->
   <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link active" href="#">Home</a>
+        <a class="nav-link" data-scroll-nav="0" href="#">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" data-scroll-nav="1" href="#">Features</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Product</a>
+        <a class="nav-link" data-scroll-nav="2" href="#">Fun Facts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" data-scroll-nav="3" href="#">Screenshots</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-scroll-nav="4" href="#">Download</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-scroll-nav="5" href="#">Testimonials</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-scroll-nav="6" href="#">FAQ</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-scroll-nav="7" href="#">Contact</a>
       </li>
     </ul>
   </div>
@@ -49,7 +61,7 @@
 <!-- Navbar End -->
 
 <!--  Home Section Start -->
-<section class="home d-flex align-items-center">
+<section class="home d-flex align-items-center" data-scroll-index="0">
   <div class="effect-wrap">
     <i class="fas fa-plus effect effect-1"></i>
     <i class="fas fa-square effect effect-2"></i>
@@ -57,7 +69,7 @@
   </div>
   <div class="container">
     <div class="row align-items-center">
-        <div class="col-md-7">
+        <div class="col-lg-7">
           <div class="home-text">
             <h1>Platform UMKM Digital Indonesia</h1>
             <p>MILI adalah sebuah platform digital untuk meningkatkan kesejahteraan dan mendukung kemajuan para pengusaha mikro atau UKM di seluruh Indonesia.</p>
@@ -82,7 +94,7 @@
 <!--  Home Section End -->
 
 <!-- Features Section Start -->
-<section class="features section-padding">
+<section class="features section-padding" data-scroll-index="1">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -120,7 +132,7 @@
 <!-- Features Section End -->
 
 <!-- Fun Facts Section Start -->
-<section class="fun-facts section-padding">
+<section class="fun-facts section-padding" data-scroll-index="2">
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-5">
@@ -168,18 +180,386 @@
 <!-- Fun Facts Section End -->
 
 <!-- App Screenshots Section Start -->
-<section class="app-screenshots section-padding">
+<section class="app-screenshots section-padding" data-scroll-index="3">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
         <div class="section-title">
-          <h2>app <span>screenshots</span></h2>
+          <h2>app <span>Screenshots</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="owl-carousel screenshots-carousel">
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/new1.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/old1.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/new2.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/old2.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/new1.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/old1.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/new2.png" alt="screenshot">
+        </div>
+        <div class="screenshot-item">
+          <img src="img/app-screenshots/old2.png" alt="screenshot">
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- App Screenshots Section End -->
+
+<!-- App Download Section Start -->
+<section class="app-download section-padding" data-scroll-index="4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>download <span>app</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-6 col-md-6">
+        <div class="app-download-item">
+          <i class="fab fa-google-play"></i>
+          <h3>Google Play</h3>
+          <p><a href='https://play.google.com/store/apps/details?id=com.sridata.mili&hl=in&gl=US&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Get it on Google Play' src='img/app-screenshots/google-play-badge.png'/></a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- App Download Section End -->
+
+<!--  How It Works Section Start -->
+<section class="how-it-works section-padding">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>How It <span>Works</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item line-right">
+          <div class="step">1</div>
+          <h3>Download</h3>
+          <p>Download Aplikasi dengan cara search pada kolom pencarian "MILI PULSA ONLINE" lalu instal.</p>
+        </div>
+      </div> 
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item line-right">
+          <div class="step">2</div>
+          <h3>Create Profile</h3>
+          <p>Buat akun pada Aplikasi MILI yang sudah di download login kehalaman dashboard MILI.</p>
+        </div>
+      </div> 
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item line-right">
+          <div class="step">3</div>
+          <h3>Top Up</h3>
+          <p>Mulai top up saldo MILI Anda untuk memulai segala macam transaksi yang terdapat pada Aplikasi MILI.</p>
+        </div>
+      </div> 
+      <div class="col-lg-3 col-md-6">
+        <div class="how-it-works-item">
+          <div class="step">4</div>
+          <h3>Start to order</h3>
+          <p>Mulai transaksi yang tersedia pada Aplikasi MILI Anda kapanpun dan dimanapun.</p>
+        </div>
+      </div> 
+    </div>
+  </div>
+</section>
+<!--  How It Works Section End -->
+
+<!--  Testimonials Section Start -->
+<section class="testimonials section-padding" data-scroll-index="5">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>What Our <span>Client</span> Say</h2>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="owl-carousel testimonials-carousel">
+          <div class="testimonial-item">
+            <div class="img-box">
+              <img src="img/testimonial/1.png" alt="testimonial">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p>Semenjak pakai MILI usaha saya semakin maju</p>
+            <h3>Pak Umar</h3>
+            <span>Pemilik Usaha Klontong</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="img-box">
+              <img src="img/testimonial/2.png" alt="testimonial">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p>Semenjak pakai MILI usaha saya semakin maju</p>
+            <h3>Pak Umar</h3>
+            <span>Pemilik Usaha Klontong</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="img-box">
+              <img src="img/testimonial/3.png" alt="testimonial">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p>Semenjak pakai MILI usaha saya semakin maju</p>
+            <h3>Pak Umar</h3>
+            <span>Pemilik Usaha Klontong</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+          <div class="testimonial-item">
+            <div class="img-box">
+              <img src="img/testimonial/4.png" alt="testimonial">
+              <i class="fas fa-quote-right"></i>
+            </div>
+            <p>Semenjak pakai MILI usaha saya semakin maju</p>
+            <h3>Pak Umar</h3>
+            <span>Pemilik Usaha Klontong</span>
+            <div class="rating">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+<!--  Testimonials Section End -->
+
+<!-- FAQ Section Start -->
+<section class="faq section-padding" data-scroll-index="6">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>frequently <span>asked</span> queries</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div id="accordion">
+          <div class="accordion-item">
+            <div class="accordion-header" data-toggle="collapse" data-target="#collapse-01">
+              <h3>TESTTESTTEST</h3>
+            </div>
+            <div class="collapse show" id="collapse-01" data-parent="#accordion">
+            <div class="accordion-body">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-02">
+            <h3>TESTTESTTEST</h3>
+          </div>
+          <div class="collapse" id="collapse-02" data-parent="#accordion">
+          <div class="accordion-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-03">
+          <h3>TESTTESTTEST</h3>
+        </div>
+        <div class="collapse" id="collapse-03" data-parent="#accordion">
+        <div class="accordion-body">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header collapsed" data-toggle="collapse" data-target="#collapse-04">
+        <h3>TESTTESTTEST</h3>
+      </div>
+      <div class="collapse" id="collapse-04" data-parent="#accordion">
+      <div class="accordion-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+      </div>
+    </div>
+  </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- FAQ Section End -->
+
+<!-- Contact Section Start -->
+<section class="contact section-padding" data-scroll-index="7">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="section-title">
+          <h2>get in <span>touch</span></h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-5">
+        <div class="contact-info">
+          <h3>For Any queries And Support</h3>
+          <div class="contact-info-item">
+            <i class="fas fa-location-arrow"></i>
+            <h4>Company Location</h4>
+            <p>Jl. Pramuka No.115, RT.004/RW.002, Sepanjang Jaya, Kec. Rawalumbu, Kota Bks, Jawa Barat 17114</p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Write to us at</h4>
+            <p>support@mili.co.id</p>
+          </div>
+          <div class="contact-info-item">
+            <i class="fas fa-phone"></i>
+            <h4>Call us on</h4>
+            <p>(021) 82407385</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-8 col-md-7">
+        <div class="contact-form">
+          <form>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Your Name" class="form-control">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group">
+                  <input type="text" placeholder="Your Email" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <input type="text" placeholder="Your Phone" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <input type="text" placeholder="Subject" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="form-group">
+                  <textarea placeholder="Your Message" class="form-control"></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-2">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+</section>
+<!-- Contact Section End -->
+
+<!-- Footer Section Start -->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Abous Us</h3>
+          <p>MILI adalah sebuah platform digital untuk meningkatkan kesejahteraan dan mendukung kemajuan para pengusaha mikro atau UKM di seluruh Indonesia.</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Condition</a></li>
+            <li><a href="#">Latest Promo</a></li>
+            <li><a href="#">Programs</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Programs</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Screenshots</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <div class="footer-col">
+          <h3>Social Media</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-12">
+        <p class="copyright-text">&copy;2021 @ MILI | PT.Jendela Pulsa Indonesia | All Rights Are Reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
 
 <!--  Video Popup Start -->
 <div class="video-popup">
