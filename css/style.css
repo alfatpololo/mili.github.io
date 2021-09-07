@@ -275,7 +275,7 @@ ul{
         position: absolute;
         z-index: 1;
         height: 400px;
-        width: 400px;
+        width: 100%;
         border: 1px solid rgba(255,255,255,0.2);
         border-radius: 50%;
         top: 50%;
@@ -585,13 +585,13 @@ ul{
         left: 40px;
         opacity: 1;
     }
-    .app-download .app-download-item::after{
+    /* .app-download .app-download-item::after{
         height: 30px;
         width: 30px;
         background-color: var(--color-2);
         right: -30px;
         top: 80%;
-    }
+    } */
     .app-download .app-download-item:hover::after{
         right: 30px;
         opacity: 1;
@@ -873,7 +873,7 @@ ul{
       Responsive
     -------------*/
     @media(max-width: 991px){
-        .navbar-toggler{
+        /* .navbar-toggler{
             background-color: var(--dark-to-main-color);
             box-shadow: var(--shadow-black-300);
             height: 34px;
@@ -881,11 +881,7 @@ ul{
             padding: 0;
             font-size: 17px;
             color: #fff;
-        }
-        .navbar-nav{
-            background-color: var(--dark-to-main-color);
-            box-shadow: var(--shadow-black-300);
-        }
+        } */
         .navbar .nav-item{
             margin:0;
             padding:5px 15px;
@@ -895,3 +891,39 @@ ul{
             background-color: var(--main-color);
         }
     }
+
+    @media (max-width: 575.98px) {
+        .home-text h1 {
+            font-size: 21px;
+        }
+
+        .section-title h2 {
+            font-size: 21px;
+        }
+     }
+
+    @media (max-width: 768px) { 
+        .navbar-toggler {
+            display: block !important;
+        }
+        .navbar.navbar.navbar-shrink .navbar-toggler,
+        .navbar.navbar.navbar-shrink .navbar-nav{
+            background-color: var(--main-color);
+            box-shadow: var(--shadow-black-300);
+        }
+
+        .navbar-nav {
+            background-color:  var(--dark-to-main-color);
+        }
+     }
+    
+    @media (max-width: 992px) { 
+        .how-it-works-item.line-right::before {
+            display: none;
+        }
+
+     }
+    
+    @media (min-width: 1200px) { 
+
+     }
