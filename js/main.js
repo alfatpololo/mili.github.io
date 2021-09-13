@@ -85,5 +85,10 @@ $(".video-play-btn, .video-popup").on("click", function(){
     $.scrollIt({
         topOffset: -50
     });
-    /*--- Page Scrolling - Scrollit ---*/
+    
+    /*--- Navbar Collapse ---*/
+    $(".nav-link").on("click", function(){
+        $(".navbar-collapse").collapse("hide");
+    });
+
 });
